@@ -28,7 +28,7 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "**I'm Powerful Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \n\n Here I support MPD Links & \nDirect DRM links of Zee5, Voot, Sunnxt, Namma Flix, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way).......\n\nHit /Help to Know More About Me 🧠 ** ")
+        "**I'm Powerful Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \n\n Here I support MPD Links & \nDirect DRM links of Zee5, Voot, Sunnxt, Namma Flix, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way).......\n\nHit /Help to Know More About Me 🤖 \n** ")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
