@@ -28,19 +28,31 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Droplink bot. Just send me link and get short link")
+        "I'm Stronger Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \nHere I support Direct DRM links of Zee5, Voot, Sunnxt, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way)....... ")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @kamdev07 For more help-**")
+        "**For Voot Link use /Voot \nFor Hotstar Link Use Hoststar \nFor zee5 Link use /zee5**")
 
 @bot.on_message(filters.command('support') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @kamdev07 or for more join @pdisk_Admins**")
+        "**Please send Your Hotstar Link...**")
+
+@bot.on_message(filters.command('Voot') & filters.private)
+async def start(bot, message):
+    await message.reply(
+        f"**Hey, {message.chat.first_name}!**\n\n"
+        "**Please Send Your voot link...**")
+
+@bot.on_message(filters.command('Zee5') & filters.private)
+async def start(bot, message):
+    await message.reply(
+        f"**Hey, {message.chat.first_name}!**\n\n"
+        "**please Send Your Zee5 Link...**")
     
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
@@ -58,7 +70,7 @@ async def pdisk_uploader(bot, message):
 @bot.on_message(filters.photo & filters.private)
 async def pdisk_uploader(bot, message):
     new_string = str(message.caption)
-    conv = await message.reply("Converting...")
+    conv = await message.reply("Prosessing Your Link...")
     dele = conv["message_id"]
     try:
         pdisk_link = await multi_pdisk_up(new_string)
@@ -79,7 +91,7 @@ async def pdisk_up(link):
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
-                v_url = """🔘__Episode__ - \nEn👉 """ + data["shortenedUrl"] + """\n"""
+                v_url = """You are not a organized User 🙄 \nGet Access From @Professional_Seller200 ⚡"""\n"""
     else:
         v_url = link
         
@@ -127,14 +139,8 @@ async def remove_username(new_List):
     return new_List
   
 async def addFooter(str):
-    footer = """\n__🔆Also available on Telegram in private channel Directly🔆__
-
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-__#SavitaBhabhi #ComicVideo #Savita #Hindi #Sexy_voice #Kirtu #Savita_Bhabhi #Velamma #Crazydad #Momshelp #incest__
-
-🔅How to Download -""" + HOWTO + """\n
-📣 Provide By @"""+ CHANNEL + """
-__🔊For all  Direct Comics folder lifetime Membership msg me on @Kamdev07 or Join- @vip_comics__"""
+    footer = """\n__Creater @Professional_Seller200 """
     return str + footer
         
 bot.run()
+mi
