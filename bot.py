@@ -28,18 +28,18 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "**I'm Stronger Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \n\nHere I support Direct DRM links of Zee5, Voot, Sunnxt, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way).......\nHit /Help to Know More About Me 🧠 ** ")
+        "**I'm Stronger Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \n\nHere I support Direct DRM links of Zee5, Voot, Sunnxt, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way).......\n\nHit /Help to Know More About Me 🧠 ** ")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hello, {message.chat.first_name}!**\n\n"
-        "**For Voot Link use /Voot \nFor Hotstar Link Use /Hoststar \nFor zee5 Link use /zee5**")
+        f"**{message.chat.first_name}!**\n\n"
+        "**Avilable Commands 👇🏻\nFor Voot DRM Video Download use /Voot \nFor Hotstar DRM Video Download Use /Hoststar \nFor zee5 DRM Videos Download use /zee5 \n Contact Bot Support Team Use /support \n\nIF Want To Buy Subscription Contact @Professional_Seller200🔐**")
 
 @bot.on_message(filters.command('Hotstar') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n"
+        f"**{message.chat.first_name}!**\n"
         "**Please send Your Hotstar Link. . . .**")
 
 @bot.on_message(filters.command('Voot') & filters.private)
@@ -48,10 +48,16 @@ async def start(bot, message):
         f"**Hey, {message.chat.first_name}!**\n"
         "**Please Send Your voot link. . .**")
 
+@bot.on_message(filters.command('support') & filters.private)
+async def start(bot, message):
+    await message.reply(
+        f"**{message.chat.first_name}!**\n"
+        "**If You To Buy Subscription Of This Bot\n Contact @Professional_Seller200 🧑‍💻**")
+
 @bot.on_message(filters.command('Zee5') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n"
+        f"**{message.chat.first_name}!**\n"
         "**please Send Your Zee5 Link. . .**")
     
 @bot.on_message(filters.text & filters.private)
