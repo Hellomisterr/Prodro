@@ -91,7 +91,8 @@ async def pdisk_up(link):
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
-                v_url = """You are not a organized User 🙄 \nGet Access From @Professional_Seller200 ⚡"""\n"""
+                v_url = """You are not a organized User 🙄 \nGet Access From @Professional_Seller200 ⚡"""
+             
     else:
         v_url = link
         
