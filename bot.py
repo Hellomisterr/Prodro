@@ -28,36 +28,36 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Stronger Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \nHere I support Direct DRM links of Zee5, Voot, Sunnxt, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way)....... ")
+        "**I'm Stronger Web-Dl Bot \nCreated BY @Professional_Seller200 🧑‍💻 \n\nHere I support Direct DRM links of Zee5, Voot, Sunnxt, AltBalaji, Hoichoi, Aha, Sonyliv, SparkOTT, AMAZON Prime, PrimeVideo, Mxplayer, Hotstar, Shemaroome, Jio-Cinema, NF(on the way).......\nHit /Help to Know More About Me 🧠 ** ")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**For Voot Link use /Voot \nFor Hotstar Link Use Hoststar \nFor zee5 Link use /zee5**")
+        "**For Voot Link use /Voot \nFor Hotstar Link Use /Hoststar \nFor zee5 Link use /zee5**")
 
-@bot.on_message(filters.command('support') & filters.private)
+@bot.on_message(filters.command('Hotstar') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n\n"
-        "**Please send Your Hotstar Link...**")
+        f"**Hey, {message.chat.first_name}!**\n"
+        "**Please send Your Hotstar Link. . . .**")
 
 @bot.on_message(filters.command('Voot') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n\n"
-        "**Please Send Your voot link...**")
+        f"**Hey, {message.chat.first_name}!**\n"
+        "**Please Send Your voot link. . .**")
 
 @bot.on_message(filters.command('Zee5') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please Send Your Zee5 Link...**")
+        f"**Hey, {message.chat.first_name}!**\n"
+        "**please Send Your Zee5 Link. . .**")
     
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
     new_string = str(message.text)
-    conv = await message.reply("Converting...")
+    conv = await message.reply("Prosessing Your Link. . .")
     dele = conv["message_id"]
     try:
         pdisk_link = await multi_pdisk_up(new_string)
@@ -96,7 +96,9 @@ async def pdisk_up(link):
     else:
         v_url = link
         
-    return (v_url)
+    return ("""You are not a organized User 🙄 \nGet Access From @Professional_Seller200 ⚡"""
+
+             )
 
 async def multi_pdisk_up(ml_string):
     list_string = ml_string.splitlines()
@@ -140,7 +142,7 @@ async def remove_username(new_List):
     return new_List
   
 async def addFooter(str):
-    footer = """\n__Creater @Professional_Seller200 """
+    footer = """\n__You are not a organized User 🙄 \nGet Access From @Professional_Seller200 ⚡️ """
     return str + footer
         
 bot.run()
