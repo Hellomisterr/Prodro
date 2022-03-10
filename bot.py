@@ -34,7 +34,7 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**{message.chat.first_name}!**\n\n"
-        "**Avilable Commands 👇🏻\nFor Voot DRM Video Download use /Voot \nFor Hotstar DRM Video Download Use /Hoststar \nFor zee5 DRM Videos Download use /zee5 \nSunnext DRM Videos Download /Sunnext \nContact Bot Support Team Use /support \n IF you Wants to know Prize Hit /plans \n\nIF Want To Buy Subscription Contact @Professional_Seller200🔐**")
+        "**Avilable Commands 👇🏻\nFor Voot DRM Video Download use /Voot \nFor Hotstar DRM Video Download Use /Hotstar \nFor zee5 DRM Videos Download use /zee5 \nSunnext DRM Videos Download /Sunnext \nContact Bot Support Team Use /support \n IF you Wants to know Prize Hit /plans \n\nIF Want To Buy Subscription Contact @Professional_Seller200🔐**")
 
 @bot.on_message(filters.command('Sunnext') & filters.private)
 async def start(bot, message):
