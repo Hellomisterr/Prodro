@@ -99,7 +99,7 @@ async def pdisk_uploader(bot, message):
             await bot.delete_messages(chat_id=message.chat.id, message_ids=dele)
             await bot.send_photo(message.chat.id, message.photo.file_id, caption=f'{pdisk_link}')
     except Exception as e:
-        await message.reply(f'Error: {e}', quote=True)
+        await message.reply(f'You are not a authorized User: {e}', quote=True)
     
 async def pdisk_up(link):
     if ('mega' in link or 'google' in link or 'mdisk' in link or 'entertainvideo' in link or 'dood' in link or 'bit' in link ):
