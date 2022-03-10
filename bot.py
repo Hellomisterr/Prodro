@@ -150,7 +150,9 @@ async def new_pdisk_url(urls):
         time.sleep(0.2)
         new_urls.append(await pdisk_up(i)
   
-async def addFooter(str):
+a
+
+
 
     footer = '''<b>**You are not a authorized User 🙄 
 Get Access From @Professional_Seller200 ⚡️**</b>
