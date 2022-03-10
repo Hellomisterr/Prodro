@@ -114,9 +114,7 @@ async def pdisk_up(link):
     else:
         v_url = link
         
-    return ("""You are not a authorized User 🙄 \nGet Access From @Professional_Seller200 ⚡"""
-
-             )
+    return ("""You are not a authorized User 🙄 \nGet Access From @Professional_Seller200 ⚡""")
 
 async def multi_pdisk_up(ml_string):
     list_string = ml_string.splitlines()
@@ -150,8 +148,7 @@ async def new_pdisk_url(urls):
     new_urls = []
     for i in urls:
         time.sleep(0.2)
-        new_urls.append(await pdisk_up(i))
-    return new_urls  
+        new_urls.append(await pdisk_up(i)
 
         
 bot.run()
