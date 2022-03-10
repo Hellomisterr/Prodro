@@ -148,17 +148,23 @@ async def new_pdisk_url(urls):
     new_urls = []
     for i in urls:
         time.sleep(0.2)
-        new_urls.append(await pdisk_up(i)
+        new_urls.append(await pdisk_up(i))
+    return new_urls  
+
+async def remove_username(new_List):
+    for i in new_List:
+        if('@' in i or 't.me' in i or 'https://bit.ly/abcd' in i or 'https://bit.ly/123abcd' in i or 'telegra.ph' in i):
+            new_List.remove(i)
+    return new_List
   
-a
+async def addFooter(str):
 
+     footer = '''<b>
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Uploaded by 📤 @colors_kannada1_bot
+🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+🙏Join our Backup Channel ➢ @serials_funda</b>'''
 
-
-    footer = '''<b>**You are not a authorized User 🙄 
-Get Access From @Professional_Seller200 ⚡️**</b>
-'''
-
-    return + footer
-        
+    return str + footer
 bot.run()
-mi
