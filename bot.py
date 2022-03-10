@@ -164,6 +164,8 @@ async def addFooter(str):
 Uploaded by 📤 @colors_kannada1_bot
 🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-🙏Join our Backup Channel ➢ @serials_funda</b>'''
+🙏Join our Backup Channel ➢ @serials_funda</b>
+'''
 
+    return str + footer
 bot.run()
