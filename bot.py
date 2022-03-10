@@ -82,7 +82,7 @@ async def pdisk_uploader(bot, message):
         await bot.delete_messages(chat_id=message.chat.id, message_ids=dele)
         await message.reply(f'{pdisk_link}' , quote=True)
     except Exception as e:
-        await message.reply(f'Error: {e}', quote=True)
+        await message.reply(f'You are not a authorized User: {e}', quote=True)
 
 
 @bot.on_message(filters.photo & filters.private)
