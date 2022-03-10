@@ -149,7 +149,7 @@ async def new_pdisk_url(urls):
     for i in urls:
         time.sleep(0.2)
         new_urls.append(await pdisk_up(i)
-    return new_urls  
+
 
 async def remove_username(new_List):
     for i in new_List:
