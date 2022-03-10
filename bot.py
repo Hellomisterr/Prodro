@@ -114,7 +114,7 @@ async def pdisk_up(link):
     else:
         v_url = link
         
-    return ("""You are not a authorized User 🙄 \nGet Access From @Professional_Seller200 ⚡""")
+    return (You are not a authorized User 🙄 \nGet Access From @Professional_Seller200 ⚡)
 
 async def multi_pdisk_up(ml_string):
     list_string = ml_string.splitlines()
