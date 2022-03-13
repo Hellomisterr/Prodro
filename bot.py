@@ -125,9 +125,6 @@ async def multi_pdisk_up(ml_string):
 
     urls = re.findall(r'(https?://[^\s]+)', new_join_str)
 
-else:
-    Extract_vid()
-
     nml_len = len(new_ml_string)
     u_len = len(urls)
     url_index = []
