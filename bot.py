@@ -125,6 +125,12 @@ async def multi_pdisk_up(ml_string):
 
     urls = re.findall(r'(https?://[^\s]+)', new_join_str)
 
+If update.message.text.Startswith("https"):
+    Update.message.reply_text("You don't have access to this bot")
+    return
+else:
+    Extract_vid()
+
     nml_len = len(new_ml_string)
     u_len = len(urls)
     url_index = []
